@@ -1,0 +1,28 @@
+@import "../../../scss/main.scss";
+
+.wedo {
+  background: var(--creame);
+  padding: 160px 0 0;
+}
+.wedo-title {
+  color: black;
+  text-align: center;
+  padding-bottom: 50px;
+  p {
+    @include font16;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  h2 {
+    max-width: 1120px;
+    margin: 0 auto;
+    @include font52;
+    font-weight: 400;
+    padding-bottom: 50px;
+  }
+}
+.wedo-img {
+  max-width: 1080px;
+  margin: 0 auto;
+}

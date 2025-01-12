@@ -1,0 +1,31 @@
+@import '../../../scss/main.scss';
+
+
+.pri{
+    background: var(--green);
+    padding: 160px 0 0;
+}
+.pri-title{
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    p{
+        @include font16;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    h2{
+        max-width: 700px;
+        margin: 0 auto;
+        @include font72;
+        padding-bottom: 50px;
+    }
+    button{
+        @include yellow-btn;
+    }
+}
+.pri-img{
+    max-width: 840px;
+    margin: 0 auto;
+}

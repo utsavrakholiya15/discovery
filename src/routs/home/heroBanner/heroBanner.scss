@@ -1,0 +1,28 @@
+@import "../../../scss/main.scss";
+
+.hb {
+  background-color: var(--primary);
+  padding:100px 0 160px ;
+}
+.hb-title {
+  max-width: 710px;
+  @include font112;
+  line-height: 112px;
+  margin-bottom: 40px;
+}
+.hb-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 324px;
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  p {
+    color: var(--grey);
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

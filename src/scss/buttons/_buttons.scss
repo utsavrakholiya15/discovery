@@ -1,0 +1,15 @@
+@mixin book-visit{
+    border: none;
+    background-color: var(--yellow);
+    @include font16;
+    padding: 18px 32px;
+    border-radius: 144px;
+}
+@mixin yellow-btn{
+    border: none;
+    color: black;
+    background: var(--yellow);
+    padding: 24px 40px;
+    border-radius: 144px;
+    @include font18;
+}

@@ -1,0 +1,33 @@
+@import '../../../scss/main.scss';
+
+.campusHb{
+    background: var(--green);
+    padding: 90px 0 0;
+}
+.campusHb-title{
+    color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  p {
+    @include font16;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  h2 {
+    max-width: 720px;
+    margin: 0 auto;
+    @include font72;
+    font-weight: 400;
+    padding-bottom: 50px;
+    line-height: 80px;
+    position: relative;
+    img{
+        position: absolute;
+        width: 265px;
+        height: 100%;
+        top: -10%;
+        right: 23%;
+    }
+  }
+}

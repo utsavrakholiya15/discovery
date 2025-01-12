@@ -1,0 +1,113 @@
+@import "../../../scss/main.scss";
+
+.addCart {
+  background: var(--creame);
+  padding: 30px 0;
+}
+.addCart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.addCart-grid-left {
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Inter Tight", sans-serif;
+  }
+  span {
+    @include font13;
+  }
+  p {
+    color: var(--grey);
+    @include font16;
+    font-weight: 400;
+    margin-top: 100px;
+  }
+  .addCart-grid-left-buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    input {
+      width: 80px;
+      height: 70px;
+      text-align: center;
+      @include font18;
+    }
+    button {
+      @include yellow-btn;
+      background: var(--green);
+      color: white;
+    }
+  }
+}
+.confirmation-parent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .confirmation {
+    width: 360px;
+    background: white;
+    border-radius: 20px;
+    .confirmation-top {
+      padding: 16px 25px;
+      border-bottom: 1px solid var(--grey);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        @include font27;
+      }
+      img {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
+    }
+    .confirmation-middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      border-bottom: 1px solid var(--grey);
+      padding-bottom: 50px;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      p {
+        color: var(--grey);
+      }
+    }
+    .confirmation-bottom {
+      padding: 15px 20px;
+      text-align: center;
+
+      .confirmation-bottom-flex {
+        display: flex;
+        justify-content: space-between;
+        span {
+          @include font18;
+        }
+        p {
+          color: var(--grey);
+        }
+      }
+      button {
+        @include yellow-btn;
+        background: var(--green);
+        color: white;
+        padding: 20px 50px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

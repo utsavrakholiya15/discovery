@@ -1,0 +1,34 @@
+@import "../../../scss/main.scss";
+
+.about-hb {
+  background: var(--creame);
+  padding: 90px 0 50px;
+}
+
+.about-hb-title {
+  color: black;
+  text-align: center;
+  padding-bottom: 50px;
+  p {
+    @include font16;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  h2 {
+    max-width: 704px;
+    margin: 0 auto;
+    @include font72;
+    font-weight: 400;
+    padding-bottom: 50px;
+    line-height: 80px;
+  }
+}
+.about-hb-cards{
+    display: flex;
+    gap: 24px;
+    .about-hb-cards-item{
+        width: 390px;
+        height: 150px;
+    }
+}

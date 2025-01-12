@@ -1,0 +1,64 @@
+@import "../../../scss/main.scss";
+
+footer {
+  padding: 96px 0;
+  background: var(--black);
+}
+.scd-logo {
+  width: 128px;
+  img {
+    width: 100%;
+    margin-top: 7px;
+  }
+}
+.footer-secondary {
+  display: grid;
+  place-items: center;
+}
+.footer-secondary-flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+.scd-socials {
+  display: flex;
+  gap: 9px;
+  .scd-socials-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    svg {
+      width: 25px;
+    }
+  }
+  .facebook {
+    background-color: var(--yellow);
+  }
+  .insta {
+    background-color: #9fdbcd;
+  }
+  .linkdin {
+    background-color: #ff5938;
+  }
+  .twitter {
+    background-color: #fff;
+  }
+  .twitter {
+    background-color: #00664e;
+  }
+}
+.footer-secondary-rights {
+  color: #fff6;
+  @include font13;
+  p {
+    margin-top: 30px;
+  }
+  span {
+    display: inline-block;
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../../scss/main.scss";
+
+header {
+  padding: 24px 0;
+  background: var(--primary);
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-icon {
+  max-width: 136px;
+  img {
+    width: 100%;
+  }
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  nav {
+    min-width: 600px;
+    background: white;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 144px;
+    span {
+      @include font16;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+      &:hover{
+        color: grey;
+      }
+    }
+    .header-cart{cursor: pointer;}
+  }
+  .book-visit {
+    @include book-visit;
+  }
+}
+.cartCount{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  font-size: 15px;
+}

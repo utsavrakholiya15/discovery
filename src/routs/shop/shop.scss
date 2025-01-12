@@ -1,0 +1,43 @@
+@import "../../scss/main.scss";
+
+.shop {
+  background: var(--creame);
+  padding: 0 0 50px;
+}
+.shop-title h2 {
+  @include font52;
+  font-weight: 400;
+  padding: 50px 0;
+  text-align: center;
+}
+.shop-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.shop-prod {
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: "Inter Tight", sans-serif;
+  cursor: pointer;
+  .shop-prod-text {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    span {
+      @include font16;
+      color: grey;
+    }
+  }
+  &:hover {
+    p,
+    span {
+      text-decoration: underline;
+    }
+  }
+}

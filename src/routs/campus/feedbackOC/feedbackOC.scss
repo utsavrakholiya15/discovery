@@ -1,0 +1,44 @@
+@import "../../../scss/main.scss";
+
+.feedbackOC {
+  background: var(--creame);
+  padding: 90px 0 ;
+  p{
+    max-width: 704px;
+    @include font32;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.doubleQoute {
+    width: 48px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.feedbackOC-profile{
+    max-width: 704px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    .feedbackOC-profile-img{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    .feedbackOC-profile-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            @include font18;
+            margin-bottom: 10px;
+        }
+        span{
+            font-size: 14px;
+            color: var(--grey);
+        }
+    }
+}
